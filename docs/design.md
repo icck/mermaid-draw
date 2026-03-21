@@ -165,11 +165,11 @@ require('mermaid-draw').setup({
 
 ## TODO
 
-- [ ] ファイル構造作成（`lua/mermaid-draw/init.lua`, `plugin/mermaid-draw.lua`）
-- [ ] Mermaid ブロック検出ロジック
-- [ ] binary バックエンド（`mermaid-ascii` のstdin呼び出し）
+- [x] ファイル構造作成（`lua/mermaid-draw/init.lua`, `plugin/mermaid-draw.lua`）
+- [x] Mermaid ブロック検出ロジック
+- [x] binary バックエンド（`mermaid-ascii` のstdin呼び出し）
 - [ ] api バックエンド（curl で `mermaid-ascii.art` 呼び出し）
-- [ ] 右サイドパネル（バッファ/ウィンドウ管理）
-- [ ] `CursorHold` / `CursorHoldI` + 差分チェック + 非同期競合処理
-- [ ] `:MermaidToggle` コマンド + キーマップ
-- [ ] `setup()` 設定インターフェース
+- [x] 右サイドパネル（バッファ/ウィンドウ管理）
+- [x] `CursorHold` / `CursorHoldI` + 差分チェック + 非同期競合処理
+- [x] `:MermaidToggle` コマンド + キーマップ
+- [x] `setup()` 設定インターフェース

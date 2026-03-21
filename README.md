@@ -2,18 +2,7 @@
 
 A Neovim plugin that renders Mermaid diagrams as ASCII art in real time.
 
-```
-┌────────┐     ┌────────┐
-│ Client │     │ Server │
-└───┬────┘     └───┬────┘
-    │              │
-    │   Request    │
-    ├─────────────►│
-    │              │
-    │   Response   │
-    │◄┈┈┈┈┈┈┈┈┈┈┈┈┈┤
-    │              │
-```
+![demo](assets/demo1.gif)
 
 ## Features
 

@@ -1,6 +1,6 @@
-# mermaid-draw テスト用サンプル
+# mermaid-draw Test Samples
 
-## フローチャート (LR)
+## Flowchart (LR)
 
 ```mermaid
 graph LR
@@ -10,7 +10,7 @@ D --> C
 E --> A
 ```
 
-## フローチャート (TD)
+## Flowchart (TD)
 
 ```mermaid
 graph TD
@@ -20,7 +20,7 @@ B --> D
 C --> D
 ```
 
-## シーケンス図
+## Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -30,7 +30,7 @@ Alice->>Bob: How are you?
 Bob-->>Alice: Fine, thanks!
 ```
 
-## ラベル付きエッジ
+## Labeled Edges
 
 ```mermaid
 graph LR
@@ -41,7 +41,7 @@ D -->|retry| A
 C -->|done| E
 ```
 
-## 複雑なフローチャート（複数パス）
+## Complex Flowchart (Multiple Paths)
 
 ```mermaid
 graph TD
@@ -62,7 +62,7 @@ I --> K
 J --> K
 ```
 
-## 複雑なシーケンス図（3者間通信）
+## Complex Sequence Diagram (3-Party Communication)
 
 ```mermaid
 sequenceDiagram
@@ -76,7 +76,7 @@ Client->>Server: GET /api/status
 Server-->>Client: 200 OK
 ```
 
-## セルフメッセージ + 複数参加者
+## Self Messages + Multiple Participants
 
 ```mermaid
 sequenceDiagram

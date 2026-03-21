@@ -1,3 +1,6 @@
+# Internal design docs
+docs/
+
 # Compiled Lua sources
 luac.out
 

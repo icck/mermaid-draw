@@ -56,6 +56,17 @@ require('mermaid-draw').setup({
 go install github.com/AlexanderGrooff/mermaid-ascii@latest
 ```
 
+lazy.nvimを使っている場合は `build` フックに記載することで自動インストールできる：
+
+```lua
+{
+  "icck/mermaid-draw",
+  build = "go install github.com/AlexanderGrooff/mermaid-ascii@latest",
+}
+```
+
+それ以外のプラグインマネージャーでは手動でインストールする。
+
 `mermaid-ascii` がPATHに存在しない場合はエラーを通知する。`setup()` の `binary_path` で明示的にパスを指定することもできる。
 
 ```lua

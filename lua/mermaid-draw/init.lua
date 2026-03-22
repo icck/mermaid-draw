@@ -15,6 +15,7 @@ local default_config = {
   binary_path = "mermaid-ascii",
   binary_opts = {},
   panel_width = nil,  -- fixed width in columns; nil = auto (1/3 of screen, min 40)
+  clear_on_leave = false,  -- clear panel when cursor leaves a mermaid block
   keymaps = {
     toggle = "<leader>mm",
   },
@@ -125,7 +126,14 @@ function M.render()
   if not is_panel_open() then return end
 
   local content = find_mermaid_block()
-  if content == nil then return end
+  if content == nil then
+    if M.config.clear_on_leave then
+      state.last_input = nil
+      state.last_output = {}
+      set_panel_lines({})
+    end
+    return
+  end
 
   -- Diff check: skip if content hasn't changed
   if content == state.last_input then return end

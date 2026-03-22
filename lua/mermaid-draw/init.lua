@@ -15,7 +15,7 @@ local default_config = {
   binary_path = "mermaid-ascii",
   binary_opts = {},
   panel_width = nil,  -- fixed width in columns; nil = auto (1/3 of screen, min 40)
-  clear_on_leave = false,  -- clear panel when cursor leaves a mermaid block
+  clear_on_leave = true,  -- clear panel when cursor leaves a mermaid block
   keymaps = {
     toggle = "<leader>mm",
   },

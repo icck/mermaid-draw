@@ -71,8 +71,8 @@ require('mermaid-draw').setup({
   -- Panel width in columns (nil = auto: 1/3 of screen width, minimum 40)
   panel_width = nil,
 
-  -- Clear the panel when the cursor leaves a mermaid block (default: keep last preview)
-  clear_on_leave = false,
+  -- Clear the panel when the cursor leaves a mermaid block (default: clear)
+  clear_on_leave = true,
 
   -- updatetime (ms): how long to wait before CursorHold fires
   updatetime = 500,

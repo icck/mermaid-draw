@@ -14,6 +14,7 @@ local default_config = {
   backend = "binary",
   binary_path = "mermaid-ascii",
   binary_opts = {},
+  panel_width = nil,  -- fixed width in columns; nil = auto (1/3 of screen, min 40)
   keymaps = {
     toggle = "<leader>mm",
   },
@@ -51,6 +52,9 @@ end
 -- Panel helpers
 
 local function panel_width()
+  if M.config.panel_width then
+    return M.config.panel_width
+  end
   return math.max(40, math.floor(vim.o.columns / 3))
 end
 

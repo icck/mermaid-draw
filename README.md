@@ -68,6 +68,9 @@ require('mermaid-draw').setup({
   -- --ascii: use ASCII characters instead of Unicode
   binary_opts = {},
 
+  -- Panel width in columns (nil = auto: 1/3 of screen width, minimum 40)
+  panel_width = nil,
+
   -- updatetime (ms): how long to wait before CursorHold fires
   updatetime = 500,
 
